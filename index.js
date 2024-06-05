@@ -40,14 +40,14 @@ async function runTask() {
         // Close the browser
         await browser.close();
         
-        console.log('Script executed1:', message);
+        console.log('Script executed:', message);
 
     } catch (error) {
         console.error('Error executing the script or logging status:', error);
     }
 }
 
-console.log('Scheduling cron...');
+console.log('scheduling cron...');
 // Schedule the task to run at midnight every day
 cron.schedule('0 0 * * *', async () => {
     await runTask();

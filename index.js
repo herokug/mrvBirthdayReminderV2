@@ -40,7 +40,7 @@ async function runTask() {
         // Close the browser
         await browser.close();
         
-        console.log('Script executed:', message);
+        console.log('Script executed1:', message);
 
     } catch (error) {
         console.error('Error executing the script or logging status:', error);

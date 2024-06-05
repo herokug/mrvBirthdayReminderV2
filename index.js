@@ -49,7 +49,7 @@ async function runTask() {
 
 console.log('Scheduling cron...');
 // Schedule the task to run at midnight every day
-cron.schedule('40 1 * * *', async () => {
+cron.schedule('10 8 * * *', async () => {
     await runTask();
 }, {
     timezone: "Asia/Colombo" // Set the timezone to Sri Lanka
@@ -62,7 +62,7 @@ async function testTask() {
 }
 
 // Test the task immediately
-testTask();
+// testTask();
 
 // Create an HTTP server to serve the running status
 const server = http.createServer((req, res) => {

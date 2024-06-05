@@ -57,7 +57,7 @@ cron.schedule('0 0 * * *', async () => {
 
 // Function to test if the task works
 async function testTask() {
-    console.log('Testing task...');
+    console.log('Testing task running...');
     await runTask();
 }
 
